@@ -1,0 +1,21 @@
+<!-- tasks.html -->
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <title>Список задач</title>
+</head>
+<body>
+<h1>Список задач:</h1>
+<ul>
+    {{range .}}
+    <li>
+        {{if .Done}}
+        <s>{{.Title}}</s>
+        {{else}}
+        {{.Title}}
+        {{end}}
+    </li>
+    {{end}}
+</ul>
+</body>
+</html>
